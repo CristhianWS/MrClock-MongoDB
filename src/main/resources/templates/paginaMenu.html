@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Mr.Clock</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/global.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styleMenu.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/carrossel.css}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="headerContainer ">
+        
+        <div class="containerHeader ">
+            <h1>Mr.Clock</h1>
+            <nav class="navContainer ">
+                <ul>
+                    <li> <a th:href="@{/sig/cliente}">Clientes</a></li>
+				<li> <a th:href="@{/sig/produto}"> Produtos </a> </li>
+				<li> <a th:href="@{/sig/pedido}">Pedidos</a> </li>
+				<li><a href="">CONVENIO</a></li>
+				<li><a th:href="@{/login?logout}">Sair</a></li>
+                    
+        
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- TESTIMONIALS -->
+    <section id="testim " class="testim ">
+        <!--         <div class="testim-cover "> -->
+        <div class="wrap ">
+
+            <span id="right-arrow " class="arrow right fa fa-chevron-right "></span>
+            <span id="left-arrow " class="arrow left fa fa-chevron-left "></span>
+            <ul id="testim-dots " class="dots ">
+                <li class="dot active "></li>
+                <!--
+                          -->
+                <li class="dot "></li>
+                <!--
+                          -->
+                <li class="dot "></li>
+                <!--
+                          -->
+                <li class="dot "></li>
+                <!--
+                          -->
+                <li class="dot "></li>
+            </ul>
+            <div id="testim-content " class="cont ">
+
+                <div class="active ">
+                    <div class="img "><img th:src="@{/images/watch-01.png} " alt=" ">
+                    </div>
+                    <h2>GEN 6 SMARTWATCH</h2>
+                    <p>Sincronize com os serviços de transmissão de música, como Spotify, para armazenar e reproduzir facilmente suas músicas favoritas diretamente do seu relógio.</p>
+                    <button class="button-purshace ">CONFIRA</button>
+                </div>
+
+                <div>
+                    <div class="img "><img th:src="@{/images/watch-05.jpg} " alt=" "></div>
+                    <h2>SMARTWATCH FORERUNNER 245</h2>
+                    <p>Relógio Smartwatch Watch 2 LS02 Haylou Preto Se você está procurando um relógio inteligente acessível, então o Smartwatch Watch 2 LS02 da Haylou é o relógio certo para você. </p>
+                    <button class="button-purshace ">CONFIRA</button>
+                </div>
+
+                <div>
+                    <div class="img "><img th:src="@{/images/watch-03.png} " alt=" "></div>
+                    <h2>HAYLOU Smartwatch Bluetooth GPS</h2>
+                    <p>As principais características do Haylou RT LS05S: - Design de ajuste de pulso Curve Mais confortável e elegante O design curvo se encaixa perfeitamente na estrutura do pulso. </p>
+                    <button class="button-purshace ">CONFIRA</button>
+                </div>
+
+                <div>
+                    <div class="img "><img th:src="@{/images/watch-04.png} " alt=" "></div>
+                    <h2>Lorem De Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <button class="button-purshace ">CONFIRA</button>
+                </div>
+
+                <div>
+                    <div class="img "><img th:src="@{/images/61ZuQs3kx1L._AC_SX679_.jpg} " alt=" "></div>
+                    <h2>GTR-3 gtr3 smartwatch 1.39</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <button class="button-purshace ">CONFIRA</button>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- </div> -->
+    </section>
+    <div class="items-container ">
+
+        <div class="wrap-container-items ">
+            <h2 class="title ">OFERTAS</h2>
+            <div class="items ">
+                <img th:src="@{/images/51fQ2CdFLeL._AC_SX679_.jpg}" alt=" ">
+                <h3>Apple Watch Series 7 (GPS), Caixa em alumínio meia-noite de 41 mm com Pulseira esportiva meia-noite</h3>
+                <div class="paragraphs "></div>
+                <p>R$ 139,90</p>
+                <p>R$ 79,80</p>
+                <button>COMPRAR</button>
+            </div>
+
+            <div class="items ">
+                <img th:src="@{/images/61O-i2DdfWS._AC_SX679_.jpg}" alt=" ">
+                <h3>Cabo Carregador Magnético Para Relógio Inteligente Redmi Mi Watch Lite 2 - Xiaomi</h3>
+                <div class="paragraphs ">
+                    <p>R$ 139,90</p>
+                    <p>R$ 79,80</p>
+                </div>
+                <button>COMPRAR</button>
+            </div>
+
+            <div class="items ">
+                <img th:src="@{/images/61peeeyhwoL._AC_SX679_.jpg}" alt=" ">
+                <h3>Novo Ivory White amazfit gts 3 GTS-3 gts3 smartwatch 1.75 display amamoled display 5 atm à prova dwaterproof água</h3>
+                <div class="paragraphs ">
+                    <p>R$ 139,90</p>
+                    <p>R$ 79,80</p>
+                </div>
+                <button>COMPRAR</button>
+            </div>
+
+            <div class="items ">
+                <img th:src="@{/images/watch-04.png}" alt=" ">
+                <h3>Cabo Carregador Magnético Para Relógio Inteligente Redmi Mi Watch Lite 2 - Xiaomi</h3>
+                <div class="paragraphs ">
+                    <p>R$ 139,90</p>
+                    <p>R$ 79,80</p>
+                </div>
+                <button>COMPRAR</button>
+            </div>
+
+            <div class="wrap-container-items-2 ">
+                <div class="items ">
+                    <img th:src="@{/images/watch-01.png}" alt=" ">
+                    <div class="paragraphs ">
+                        <h3>Cabo Carregador Magnético Para Relógio Inteligente Redmi Mi Watch Lite 2 - Xiaomi</h3>
+                        <p>R$ 139,90</p>
+                        <p>R$ 79,80</p>
+                    </div>
+                    <button>COMPRAR</button>
+                </div>
+
+                <div class="items ">
+                    <img th:src="@{/images/6767.jpg}" alt=" ">
+                    <h3>Cabo Carregador Magnético Para Relógio Inteligente Redmi Mi Watch Lite 2 - Xiaomi</h3>
+                    <div class="paragraphs ">
+                        <p>R$ 139,90</p>
+                        <p>R$ 79,80</p>
+                    </div>
+                    <button>COMPRAR</button>
+                </div>
+
+                <div class="items ">
+                    <img th:src="@{/images/watch-03.png}" alt=" ">
+                    <h3>Cabo Carregador Magnético Para Relógio Inteligente Redmi Mi Watch Lite 2 - Xiaomi</h3>
+                    <div class="paragraphs ">
+                        <p>R$ 139,90</p>
+                        <p>R$ 79,80</p>
+                    </div>
+                    <button>COMPRAR</button>
+                </div>
+
+                <div class="items ">
+                    <img th:src="@{/images/5353.jpg}" alt=" ">
+                    <h3>Cabo Carregador Magnético Para Relógio Inteligente Redmi Mi Watch Lite 2 - Xiaomi</h3>
+                    <div class="paragraphs ">
+                        <p>R$ 139,90</p>
+                        <p>R$ 79,80</p>
+                    </div>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="convenio-container ">
+            <h2 class="title ">A sua saúde importa para gente</h2>
+            <div>
+                <img src="./assets/medico 1.png " alt=" ">
+                <div class="buttons-convenio ">
+                    <button class="button-1 ">Melhor Convenio médico para sua sáude</button>
+                    <button class="button-2 ">Box</button>
+                    <button class="button-3 ">Box</button>
+                </div>
+            </div>
+        </div> -->
+        <footer>
+            <div class="footerContainer ">
+                <div class="footer-content ">
+                    <h3>Mr.Clock</h3>
+                    <p>João Victor</p><br>
+                    <p>Luan</p><br>
+                    <p>Cristhian</p><br>
+                    <p>Débora</p><br>
+                </div>
+            </div>
+        </footer>
+</body>
+
+<script src="https://use.fontawesome.com/1744f3f671.js "></script>
+<script src="template4.js "></script>
+
+</html>

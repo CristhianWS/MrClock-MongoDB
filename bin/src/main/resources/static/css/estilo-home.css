@@ -1,0 +1,804 @@
+.divimg{
+    display: flex;
+    justify-content: center;
+}
+
+#main{
+    margin-left:38.5%;
+}
+
+
+#ou{
+    margin: 3% 21%
+}
+
+#titulo{
+    margin-top:5%;
+    margin-bottom:5%;
+    font-size:2em;
+    color:#fff;
+    margin-left:40%;
+}
+
+.btn{
+    background-color:#fff;
+    font-weight: bold;
+    border-radius: 7%;
+    border: none;
+    width: 45%;
+    height: 35px;
+    font-size: 1em;
+    cursor:pointer;
+    margin-top: 1%;
+    margin-bottom: 6%;
+}
+
+.btn a{
+    text-decoration: none;
+    color:#25527B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+    overflow-x: hidden; 
+}
+
+#acessibilidade{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #FFF;
+}
+
+#atalhos{
+    list-style: none;
+    font-family: arial;
+    font-size: 1em;
+    margin-left: 1%;
+    font-size: 15px;
+}
+#atalhos li{
+    display: inline;
+}
+#pgacess{
+    margin-left: 25%;
+}
+
+nav{
+    padding-top: 0;
+    background-color:rgb(51, 50, 50);
+    height: 40px;
+    border: 3px solid rgb(0, 0, 0);
+    margin:0%;
+    position: static;
+    
+    
+}
+
+#menu li{
+    display: inline;
+    padding-left: 30px;
+    
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    top: 10px;
+    position: relative;
+
+}
+
+#atalhos li {
+    display: inline;
+    padding-left: 20px;
+}
+
+#topo{
+    background-color: rgb(37, 82, 123);
+    height: 115px;
+}
+
+#logo {
+    width: 150px;
+    height: 130px;
+    padding-left: 3%;
+    padding-top: 1px;
+    position: relative;
+    border: none;
+    
+}
+
+#pesquisa{
+        width: 45%;
+        height: 60px;
+        background-color: #ffffff;
+        color: #000;
+        border-radius: 15px;
+        top: -60px;
+        left: 230px;
+        position: relative;
+        font-size: 20px;
+
+}
+
+.barra_pesq input[type='image']{
+
+    height: 50px;
+    right: -10%;
+    top:-35%;
+    border:none;
+    position:relative;
+  
+}
+
+#carrinho{
+   float: right;
+   right: 5%;
+   height: 100px;
+   position: relative;
+}
+
+#relogios_fundo{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: rgb(37, 82, 123);
+}
+
+
+p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*-------------------------- relÃ³gios ---------------*/
+
+#r1{
+    width:250px;
+    height:300px;
+    /* padding-left: 70px;
+    padding-top: 50px; */
+    margin: 3% 3%;
+     background-color: #fff;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+
+#relogio1txt{
+    width: 18%;
+    font-weight:bold;
+    color:#000;
+    text-align: justify;
+}
+
+#r2{
+    width:250px;
+    height:300px;
+    background-color: #fff;
+
+}
+
+
+#r3{
+    width:250px;
+    height:300px;
+    margin: 3% 3%;
+    background-color: #fff;
+    
+}
+
+#relogio3txt{
+    width: 18%;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+    text-align: justify;
+}
+
+#r4{
+    width:250px;
+    height:300px;
+    margin: 3% 3%;
+    background-color: #fff;
+}
+
+#relogio4txt{
+    width: 18%;
+    font-weight:bold;
+    color:#000;
+    text-align: justify;
+}
+
+#r5{
+    width:250px;
+    height:300px;
+    margin: 3% 3%;
+    background-color: #fff;
+    
+} 
+
+#relogio5txt{
+    width: 18%;
+    font-weight:bold;
+    color:#000;
+    text-align: justify;
+}
+
+
+/*------------------- rodapÃ© ---------------------*/
+#mapa{
+    width: 300px;
+    height: auto;
+    margin-top: 40px;
+    padding-left: 2%;
+}
+
+#local{
+    padding-left: 25%;
+    position: relative;
+    top: -150px;
+    color: black;
+    font-size: 20px;
+}
+
+#relogio{
+    padding-left: 25%;
+    position: relative;
+    top: -100px;
+}
+
+#horario{
+    padding-left: 28%;
+    position: relative;
+    top: -125px;
+    color: black;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#midias{
+    position: relative;
+    text-align: right;
+    top: -250px;
+    padding-right: 4%;
+    font-size: 20px;
+}
+
+.sociais{
+    width: 30px;
+    padding-left: 40px;
+    position: relative;
+
+}
+
+footer{
+    background-color: rgb(128, 128, 128);
+    width: 100%;
+    height: 300px;
+    
+    
+}
+
+/*-------------------------- mÃ©todo hover ---------------*/
+
+#menu a:hover {
+    color: rgb(97, 97, 93);
+}
+
+#r1 p:hover{
+    color:black;
+}
+
+#r2 p:hover{
+    color:black;
+}
+
+#r3 p:hover{
+    color:black;
+}
+
+#r4 p:hover{
+    color:black;
+}
+
+#r5 p:hover{
+    color:black;
+}
+
+
+/*-------------------------- responsividade ---------------*/
+@media screen and (max-width: 1275px){
+        #local, #horario{
+            padding-left: 30%;
+            position: relative;
+            font-size: 14px;
+        } 
+        #relogio{
+            padding-left: 28%;
+        }
+
+        #midiastx, #telefonetx, #whatstx{
+            font-size: 14px;
+
+        }
+
+        .sociais{
+            width: 25px;
+            padding-left: 10px;
+            position: relative;
+        }
+}
+
+
+@media screen and (max-width: 1157px){
+
+       #local, #horario{
+            padding-left: 35%;
+            position: relative;
+            font-size: 14px;
+        } 
+        #relogio{
+            padding-left: 33%;
+        }
+
+}
+
+@media screen and (max-width: 1100px){
+
+    #local, #horario{
+         padding-left: 38%;
+         position: relative;
+         font-size: 14px;
+     } 
+     #relogio{
+         padding-left: 33%;
+     }
+
+}
+
+@media screen and (max-width: 975px){
+    #relogio1, #relogio2, #relogio3, #relogio4, #relogio5{
+            width: 150px;
+        
+    }
+    
+    #relogio1txt, #relogio2txt, #relogio3txt, #relogio4txt, #relogio5{
+        font-size: 10px;
+    }
+
+     #relogio{
+         padding-left: 35%;
+     }
+
+     #carrinho{
+        float: right;
+        right: 2%;
+        width: 80px;
+        height: 80px;
+
+     }
+
+}
+
+@media screen and (max-width: 916px){
+    #mapa{
+        width: 30%;
+    }
+
+    #local, #horario{
+        font-size: 12px;
+    }
+
+    #relogio1, #relogio2, #relogio3, #relogio4, #relogio5{
+        width: 100px;
+        padding-top: 0px;
+    
+    }
+
+    #r1, #r2{
+        padding-top: -180px;
+        position: relative;
+    }
+
+    #r3{
+        top: 50%;
+        float: right;
+        position: absolute;
+    }
+
+    #r4, #r5 {
+        padding-bottom: 60px;
+    }
+        
+    #relogio1txt, #relogio2txt, #relogio3txt, #relogio4txt, #relogio5txt{
+        font-size: 11px;
+    }
+
+    #localização {
+        padding-top: 80px;
+        position: relative;
+    }
+}
+
+    
+    #local{
+        top:30px;
+        position: absolute;
+        left: -250px;
+    }
+
+    #horario{
+        top:50px;
+        position: absolute;
+        left: -250px;
+    }
+
+    #midias{
+        padding-top: 90px;
+    }
+
+    #relogio{
+        top:50px;
+        position: absolute;
+        left: -250px;
+        width: 20px;
+    }
+
+    #pesquisa  {
+    width: 30%;
+    height: 45px;
+    border-radius: 15px;
+    top: -60px;
+    left: 100px;
+    position: relative;
+    font-size: 13px;
+ }
+
+
+@media screen and (max-width: 717px){
+
+        #local,#horario {
+            padding-left: 45%;
+        }
+
+        #relogio{
+            padding-left: 41%;
+        }
+
+         #r2{
+         padding-top: 90px;
+        }
+
+        #r4 {
+            padding-bottom: 100px;
+            padding-top: 180px;
+            position: absolute;
+        }
+    
+
+        #r5 {
+            padding-bottom: 100px;
+            padding-top: 100px;
+        }
+    
+}
+
+
+@media screen and (max-width: 614px){
+
+    #local, #horario{
+        font-size: 11px;
+        padding-left: 60%;
+    
+    }
+   
+    #relogio{
+        padding-left: 56%;
+    }
+
+    #acessibilidade a{
+        font-size: 13px;
+        float: left;
+        position: relative;
+    }
+
+    #mapa{
+        width: 38%;
+    }
+
+    #midias{
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 520px){
+
+    #acessibilidade a{
+        font-size: 10px;
+        float: left;
+        position: relative;
+    }
+
+
+    #logo{
+        padding: 0px;
+    }
+
+    
+    #pesquisa{
+        width: 30%;
+        height: 35px;
+        border-radius: 15px;
+        top: -60px;
+        left: 30px;
+        position: relative;
+        font-size: 13px;
+     }
+    
+     #menu a{
+         font-size: 13px;
+     }
+     
+    .barra_pesq input[type='image']{
+        height: 30px;
+        right: 4%;
+        top: -40%;
+        border: none;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 495px){
+
+        #r3{
+           top: 44%;
+           position: absolute;
+        }
+
+        #midias{
+                padding-top: 120px;
+
+        }
+
+        #local, #horario{
+            font-size: 11px;
+            padding-left: 66%;
+        
+        }
+       
+        #relogio{
+            padding-left: 62%;
+        }
+
+        #acessibilidade{
+            width: 100%;
+        }
+
+        #local, #horario{
+            font-size: 11px;
+            padding-left: 72%;
+        
+        }
+       
+        #relogio{
+            padding-left: 68%;
+        }
+     
+
+
+}
+
+
+@media screen and (max-width: 392px){
+
+    #carrinho{
+        width: 50px;
+        height: 60px;
+    }
+
+    #pesquisa{
+        width: 30%;
+        height: 25px;
+
+    }
+
+    .barra_pesq input[type='image']{
+        height: 20px;
+        right: 4%;
+        top: -47%;
+        border: none;
+        position: relative;
+    }
+
+
+    #conteudo p{
+        font-size: 7px;
+    }
+
+    #localizaÃ§Ã£o p{
+        font-size: 10px;
+    }
+
+    #menu a{
+        font-size: 10px;
+    }
+
+        #midias{
+            padding-top: 150px;
+        }
+
+        #midias p{
+            font-size: 10px;
+        }
+
+        #local, #horario{
+            font-size: 11px;
+            padding-left: 88%;
+        
+        }
+       
+        #relogio{
+            padding-left: 82%;
+        }
+    }
+
+    @media screen and (max-width: 335px){
+        
+        #pesquisa {
+            width: 28%;
+            top: -10px;
+            left: 0px;
+            position: relative;
+
+        }
+
+        #acessibilidade{
+            width: 100%;
+            height: 30px;
+        }
+
+        #logo{
+            width: 100px;
+            height: 80px;
+        }
+
+        #pesquisa::-webkit-input-placeholder{
+            font-size: 10px;
+
+        }
+
+        .barra_pesq input[type='image']{
+            height: 15px;
+            right: 10%;
+            top: -8%;
+            border: none;
+            position: relative;
+        }
+
+        #menu li{
+            padding-left: 10px;
+        }
+        
+        #conteudo img{
+            width: 70px;
+        }
+
+        #r4{
+            padding-top: 50px;
+        }
+  
+        #local, #horario{
+            font-size: 9px;
+            padding-left: 110%;
+        
+        }
+       
+        #relogio{
+            padding-left: 102%;
+        }
+    }
+
+    @media screen and (min-height: 812px){
+
+        #r4{
+            padding-top: 20px;
+            position: absolute;
+        }
+
+        #midias{
+            padding-top: 80px;
+        }
+
+    }
+
+    @media screen and (min-height: 1024px){
+
+        #r3{
+            top:30%;
+        }
+
+        #r4{
+            top:60%;
+        }
+    }
+
+
+        @media screen and (min-height: 1365px){
+
+
+            #conteudo img{
+                width: 130px;
+            }
+
+            #r2{
+                top: 40%;
+                left: 40%;
+            }
+
+            #r3 {
+                top: 25%;
+                left: 80%;
+            }
+
+            #r4 {
+                top: 25%;
+                left: 50%;
+            }
+
+
+
+    }
+    
+@media screen and (max-width: 1200px){
+    #pgacess{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1120px){
+    #pgacess{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 1050px){
+    #pgacess{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 987px){
+    #pgacess{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 925px){
+    #pgacess{
+        padding-left: 1%;
+    }
+}
+@media screen and (max-width: 879px){
+    #pgacess{
+        padding-left: 0%;
+    }
+}
+@media screen and (max-width: 865px){
+    #atalhos li{
+        display: none;
+    }
+   #atalhos li#pgacess{
+       display: inline-flex;
+       padding-left: 0%;
+   }
+   #atalhos Li.contraste{
+       display: inline-flex;
+   }
+   #atalhos li.fonte{
+       display: inline-flex;
+   }
+}

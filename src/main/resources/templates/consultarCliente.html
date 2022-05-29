@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/global.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/consultarCliente.css}" />
+    <title>Lista de clientes</title>
+</head>
+<body>
+    <div class="headerContainer">
+        <div class="containerHeader">
+            <h1>Mr.Clock</h1>
+            <nav class="navContainer">
+				<ul>
+                    <li><a th:href="@{/} ">Início</a></li>
+                    <li><a th:href="@{/sig/cliente} ">Clientes</a></li>
+                    <li><a th:href="@{/sig/produto} ">Produtos</a></li>
+                    <li> <a th:href="@{/sig/pedido}">Pedidos</a> </li>
+                    <li><a href="">CONVENIO</a></li>
+                    <li><a th:href="@{/login?logout} ">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+	<!-- cabecalho -->
+	<header id="topo">
+	<!-- Vlibrs -->
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+		</div>
+	</div>
+
+	<main id="conteudo">
+		<br />
+		<h3 class="exibe-titulo"> Lista de clientes </h3>
+		<div class="panel-body" th:switch="${clientes}">
+			<br />
+			<h5 th:case="null">Não existem clientes cadastrados ainda!</h5>
+			<div th:case="*">
+				<table class="table-exibe">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>CPF</th>
+							<th>Nome</th>
+							<th>Dt. Nascimento</th>
+							<th>CEP</th> 
+							<th>Endereço</th>
+							<th>Complemento</th>
+							<th>Dt. Cadastro</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="cliente : ${clientes}">
+							<td th:text="${cliente.id}"></td>
+							<td th:text="${cliente.cpf}"></td>
+							<td th:text="${cliente.nome}"></td>
+							<td th:text="${cliente.dataNascimento}"></td>
+							<td th:text="${cliente.cep}"></td>
+							<td th:text="${cliente.endereco}"></td>
+							<td th:text="${cliente.complemento}"></td>
+							<td th:text="${cliente.dataCadastro}"></td>
+
+							<td>
+								<div class="btn-exibe-group">
+									<a th:href="@{/sig/clientes/{cpf}(cpf=${cliente.cpf})}">
+										<button class="btn-exibe"> Editar </button></a>
+									<a th:href="@{/sig/clientes/id/{id}(id=${cliente.id})}">
+										<button id="btn-exibe-2">Excluir</button></a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</main>
+
+</body>
+
+</html>

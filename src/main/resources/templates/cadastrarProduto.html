@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/global.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/atCadastrarProdutoStyle.css}" />
+	<script type="text/javascript">
+		function consulta() {
+			window.open("/sig/produtos");
+		}
+	</script>
+    <title>Cadastrar Produto</title>
+</head>
+
+<body>
+	<header>
+		<div class="containerHeader">
+			<h1>Mr.Clock</h1>
+			<nav class="navContainer">
+				<ul>
+					<li><a th:href="@{/} ">Início</a></li>
+					<li><a th:href="@{/sig/cliente} ">Clientes</a></li>
+					<li><a th:href="@{/sig/produto} ">Produtos</a></li>
+					<li> <a th:href="@{/sig/pedido}">Pedidos</a> </li>
+					<li><a href="">CONVENIO</a></li>
+					<li><a th:href="@{/login?logout} ">Sair</a></li>
+				</ul>
+			</nav>
+		</div>
+		</header>
+<div class="wrapper">
+        <div class="container">
+            <h2>Cadastrar produto</h2>
+            <form action="#" th:action="@{/sig/produtos}" th:object="${produto}" method="post">
+                <div class="card-details">
+                    <div class="card-box">
+                        <input th:field="*{nome}" type="text" placeholder="Escreva o nome do produto" id="nome" required>
+                    </div>
+                    <div class="card-box">
+                        <input th:field="*{marca}" type="text" placeholder="Escreve a marca do produto" id="marca">
+                    </div>
+                    <div class="card-box">
+                        <input th:field="*{preco}" type="text" placeholder="Escreva o valor do produto" id="preco" required>
+                    </div>
+                    <div class="card-box">
+                        <input th:field="*{descricao}" type="text" placeholder="Descreva as características do produto" id="descricao" required>
+                    </div>
+                    <div class="card-box">
+                        <input th:field="*{quantidade}" type="number" placeholder="Escreva a quantidade do produto" id="quantidade">
+                    </div>
+                </div>
+                <div class="button">
+                    <input class="register" type="submit" value="Cadastrar produto">
+                    <input class="consult" type="button" value="Consultar produto" onclick=consulta()>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

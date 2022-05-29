@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/global.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/atCadastrarProdutoStyle.css}" />
+    <script type="text/javascript">
+        function consulta() {
+            window.open("/sig/pedidos");
+        }
+    </script>
+    <title>Cadastrar Pedido</title>
+</head>
+
+<body>
+    <header>
+        <div class="containerHeader">
+            <h1>Mr.Clock</h1>
+            <nav class="navContainer">
+                <ul>
+                    <li><a th:href="@{/} ">INÍCIO</a></li>
+                    <li><a th:href="@{/sig/cliente} ">CLIENTES</a></li>
+                    <li><a th:href="@{/sig/produto} ">PRODUTOS</a></li>
+                    <li> <a th:href="@{/sig/pedido}">PEDIDOS</a> </li>
+                    <li><a href="">CONVÊNIO</a></li>
+                    <li><a th:href="@{/login?logout} ">SAIR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="container">
+            <h2>Cadastrar Pedido</h2>
+            <form action="#" th:action="@{/sig/pedidos}" th:object="${umPedido}" method="post">
+                <div class="card-details">
+                    <div class="card-box">
+                        <input 
+                        th:field="*{cpf}" type="text" placeholder="Escreva o CPF" id="cpf"
+                            required>
+                    </div>
+                    <div class="card-box">
+                        <input th:field="*{produtoId}" type="text" placeholder="Código Produto" id="produtoId">
+                    </div>
+                    <div class="card-box">
+                        <input th:field="*{quantidade}" type="text" placeholder="Quantidade" id="quantidade"
+                            required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input class="register" type="submit" value="Cadastrar Pedido">
+                    <input
+                    class="consult" 
+                    type="submit" 
+                    th:href="@{/sig/pedidos}"
+                    value="Consultar produto">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/global.css}" />
+  <link rel="stylesheet" type="text/css" th:href="@{/css/atCadastrarClienteStyle.css}" />
+  <script type="text/javascript">
+    function consulta() {
+      window.open("/sig/clientes");
+    }
+  </script>
+  <title>Cadastrar Cliente</title>
+</head>
+
+<body>
+  <header>
+    <div class="containerHeader">
+      <h1>Mr.Clock</h1>
+      <nav class="navContainer">
+        <ul>
+          <li><a th:href="@{/} ">Início</a></li>
+          <li><a th:href="@{/sig/cliente} ">Clientes</a></li>
+          <li><a th:href="@{/sig/produto} ">Produtos</a></li>
+          <li> <a th:href="@{/sig/pedido}">Pedidos</a> </li>
+          <li><a href="">CONVENIO</a></li>
+          <li><a th:href="@{/login?logout} ">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="container">
+      <h2>Atualizar cliente</h2>
+      <form action="#" th:action="@{/sig/clientes/id/{id} (id=${cliente.id}) }" th:object="${cliente}" method="post">
+        <div class="card-details">
+          <div class="card-box">
+            <input th:field="*{cpf}" type="text" placeholder="Escreva o CPF do cliente" id="cpf" required>
+          </div>
+          <div class="card-box">
+            <input th:field="*{nome}" type="text" placeholder="Escreve o nome do cliente" id="nome" required>
+          </div>
+          <div class="card-box">
+            <input th:field="*{dataNascimento}" type="text" placeholder="Escreva a data de nascimento"
+              id="dataNascimento" required>
+          </div>
+          <div class="card-box">
+            <input th:field="*{cep}" type="text" placeholder="Escreva o CEP do cliente" id="cep" required>
+          </div>
+          <div class="card-box">
+            <input th:field="*{complemento}" type="text" placeholder="Escreva o complemento do cliente" id="complemento"
+              required>
+          </div>
+        </div>
+        <div class="button">
+          <input class="register" type="submit" value="Atualizar cliente">
+          <input class="consult" type="button" value="Consultar cliente" onclick=consulta()>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

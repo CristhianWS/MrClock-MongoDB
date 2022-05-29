@@ -1,0 +1,166 @@
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-weight: 400;
+    color: white;
+  }
+
+  .containerHeader {
+    height: 120px;
+    background: #1b1b1b;
+    padding-top: 20px;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Inter;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+li {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  li {
+    background:
+      linear-gradient(
+        to right,
+        rgba(100, 200, 200, 0),
+        rgba(100, 200, 200, 0)
+      ),
+      linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        rgb(44, 255, 174),
+        rgb(255, 18, 18)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+
+.small-container { 
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 1.5625rem;
+    padding-left: 1.25rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 100px;
+}
+
+.single-product {
+    margin-top:  5rem;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 3.125rem;
+}
+
+.small-img-col {
+    flex-basis: auto;
+    cursor: pointer;
+}
+
+.single-product .col-2 img {
+    padding: 0;  
+}
+
+.single-product .col-2 {
+    padding: 20px;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 22.5rem;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 3.75rem;
+    margin: 25px 0;
+    margin-right: 120px;
+    color: #1b1b1b;
+    
+}
+
+.single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+input:focus { 
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #004da0;
+    padding: .5rem 1.875rem;
+    margin: 1.875rem 0;
+    box-sizing: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #003773;
+}

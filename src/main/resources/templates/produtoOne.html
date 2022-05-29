@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/paginaProduto.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/global.css}" />
+    <title>Pagina Produto</title>
+</head>
+<body>
+    <header>
+        <div class="containerHeader">
+            <h1>Mr.Clock</h1>
+            <nav class="navContainer">
+                <ul>
+                    <li><a th:href="@{/} ">INÍCIO</a></li>
+                    <li><a th:href="@{/sig/cliente}">CLIENTES</a></li>
+                    <li><a th:href="@{/sig/produto}">PRODUTOS</a></li>
+                    <li><a th:href="@{/sig/pedido}">PEDIDOS</a></li>
+                    <li><a th:href="@{/login?logout} ">SAIR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="small-container single-product" >
+        <div class="row">
+            <div class="col-2">
+                <img th:src="@{/images/61O-i2DdfWS._AC_SX679_.jpg}" width="100%" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img th:src="@{/images/61O-i2DdfWS._AC_SX679_.jpg}" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img th:src="@{/images/61O-i2DdfWS._AC_SX679_.jpg}" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img th:src="@{/images/61O-i2DdfWS._AC_SX679_.jpg}" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img th:src="@{/images/61O-i2DdfWS._AC_SX679_.jpg}" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h1>Smartwatch Amazfit GTS 2 Mini</h1>
+                <h4>R$469,00</h4>
+                <select name="" id="">
+                    <option selected value="">Selecione o tamanho</option>
+                    <option value="">Verde</option>
+                    <option value="">Preto</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn" >Adicionar ao Carrinho</a>
+                <h3>Detalhes do Produto</h3>
+                <br>
+                <p>Melhore o gerenciamento de tempo e a eficiência com o relógio Pomodoro, controle remotamente o celular para tirar fotos e ative o modo Selfie com a câmera Bluetooth13</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
