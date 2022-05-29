@@ -21,12 +21,12 @@
             <h1>Mr.Clock</h1>
             <nav class="navContainer">
                 <ul>
-                    <li><a th:href="@{/} ">INÍCIO</a></li>
-                    <li><a th:href="@{/sig/cliente} ">CLIENTES</a></li>
-                    <li><a th:href="@{/sig/produto} ">PRODUTOS</a></li>
-                    <li> <a th:href="@{/sig/pedido}">PEDIDOS</a> </li>
-                    <li><a href="">CONVÊNIO</a></li>
-                    <li><a th:href="@{/login?logout} ">SAIR</a></li>
+                    <li><a th:href="@{/} ">Início</a></li>
+					<li><a th:href="@{/sig/cliente} ">Clientes</a></li>
+					<li><a th:href="@{/sig/produto} ">Produtos</a></li>
+					<li> <a th:href="@{/sig/pedido}">Pedidos</a> </li>
+					<li><a href="">CONVENIO</a></li>
+					<li><a th:href="@{/login?logout} ">Sair</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,7 +42,7 @@
                             required>
                     </div>
                     <div class="card-box">
-                        <input th:field="*{produtoId}" type="text" placeholder="Código Produto" id="produtoId">
+                        <input th:field="*{produtoId}" type="text" placeholder="Código Produto" id="produtoId" requires>
                     </div>
                     <div class="card-box">
                         <input th:field="*{quantidade}" type="text" placeholder="Quantidade" id="quantidade"
@@ -55,7 +55,7 @@
                     class="consult" 
                     type="submit" 
                     th:href="@{/sig/pedidos}"
-                    value="Consultar produto">
+                    value="Consultar pedidos">
                 </div>
             </form>
         </div>
