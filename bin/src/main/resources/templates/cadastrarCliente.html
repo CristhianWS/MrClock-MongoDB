@@ -21,12 +21,12 @@
             <h1>Mr.Clock</h1>
             <nav class="navContainer">
                 <ul>
-                    <li><a th:href="@{/} ">INÍCIO</a></li>
-                    <li><a th:href="@{/sig/cliente} ">CLIENTES</a></li>
-                    <li><a th:href="@{/sig/produto} ">PRODUTOS</a></li>
+                    <li><a th:href="@{/} ">Início</a></li>
+                    <li><a th:href="@{/sig/cliente} ">Clientes</a></li>
+                    <li><a th:href="@{/sig/produto} ">Produtos</a></li>
                     <li> <a th:href="@{/sig/pedido}">Pedidos</a> </li>
                     <li><a href="">CONVENIO</a></li>
-                    <li><a th:href="@{/login?logout} ">LOGOUT</a></li>
+                    <li><a th:href="@{/login?logout} ">Sair</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,24 +37,22 @@
             <form action="#" th:action="@{/sig/clientes}" th:object="${cliente}" method="post">
                 <div class="card-details">
                     <div class="card-box">
-                        <input th:field="*{cpf}" type="text" placeholder="Escreva o CPF do cliente" id="cpf">
+                        <input th:field="*{cpf}" type="text" placeholder="Escreva o CPF do cliente" id="cpf" required>
                     </div>
                     <div class="card-box">
-                        <input th:field="*{nome}" type="text" placeholder="Escreve o nome do cliente" id="nome">
+                        <input th:field="*{nome}" type="text" placeholder="Escreve o nome do cliente" id="nome" required>
                     </div>
                     <div class="card-box">
-                        <input th:field="*{dataNascimento}" type="text" placeholder="Escreva a data de nascimento" id="dataNascimento">
+                        <input th:field="*{dataNascimento}" type="text" placeholder="Escreva a data de nascimento" id="dataNascimento" required>
                     </div>
                     <div class="card-box">
                         <input th:field="*{sexo}" type="text" placeholder="Escreva o sexo" id="sexo">
                     </div>
                     <div class="card-box">
-                        <input th:field="*{cep}" type="text" placeholder="Escreva o CEP do cliente" id="cep">
+                        <input th:field="*{cep}" type="text" placeholder="Escreva o CEP do cliente" id="cep" required>
                     </div>
                     <div class="card-box">
-                        <input th:field="*{complemento}"  type="text" placeholder="Escreva o complemento do cliente" id="complemento">
-                        <span th:if="${#fields.hasErrors('complemento')}" th:errors="*{complemento}"
-									class="text-danger"></span>
+                        <input th:field="*{complemento}"  type="text" placeholder="Escreva o complemento do cliente" id="complemento" required>
                     </div>
                 </div>
                 <div class="button">

@@ -150,3 +150,19 @@ li {
         padding: 20px 0 20px 0;
         font-size: 28px;
 }
+
+.buttonCancelar {
+    background-color: #0057af;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+
+.buttonExcluir {
+    background-color: rgb(255, 39, 53);
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 6px;
+}

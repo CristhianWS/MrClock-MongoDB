@@ -179,3 +179,9 @@ li {
   li:hover {
     background-size: 0 3px, 100% 3px;
   }
+
+  @media (max-width: 1080px) {
+    .wrapper {
+        margin-top: 50px;
+    }
+}

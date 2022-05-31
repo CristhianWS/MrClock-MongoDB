@@ -2,7 +2,7 @@
 
 Link do Heroku site: https://mr--clock.herokuapp.com/ (Atualizado em 12/05)
 
-Chave: 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
+Chave: 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
 
 ### Fatec ZL - Centro Paula Souza
 ##### Disciplina Desenvolvimento Web III
