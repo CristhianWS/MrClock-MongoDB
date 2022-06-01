@@ -1,6 +1,6 @@
 # SIG5
 
-Link do Heroku site: https://mr--clock.herokuapp.com/ (Atualizado em 12/05)
+Link do Heroku site: https://clockmr.herokuapp.com/ 
 
 Chave: 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
 
