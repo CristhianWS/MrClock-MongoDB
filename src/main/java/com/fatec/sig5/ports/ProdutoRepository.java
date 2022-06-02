@@ -10,8 +10,10 @@ import com.fatec.sig5.model.Produto;
 
 @Repository
 public interface ProdutoRepository extends MongoRepository<Produto, Long> {
-	Optional<Produto> findById(String id);
+	Optional<Produto> findById(Long id);
 
 	List<Produto> findAllByNomeIgnoreCaseContaining(String nome);
+
+	Produto getById(Long id);
 
 }
