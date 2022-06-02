@@ -3,30 +3,37 @@ package com.fatec.sig5.model;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import java.util.Random;
+
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import org.hibernate.validator.constraints.br.CPF;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@Entity
+import org.hibernate.validator.constraints.br.CPF;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+@Document(collection="Pedido")
 public class Pedido {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id; // numero do pedido
+	@Field
 	@CPF
 	private String cpf;
+	@Field
 	private String dataEmissao;
+	@Field
 	@OneToMany
 	private List<ItemDePedido> itens = new ArrayList<>();
 
 	public Pedido(String cpf) {
+		Random rand = new Random();
+		this.id = rand.nextLong();
 		this.cpf = cpf;
 	}
 
 	public Pedido() {
+		Random rand = new Random();
+		this.id = rand.nextLong();
 
 	}
 

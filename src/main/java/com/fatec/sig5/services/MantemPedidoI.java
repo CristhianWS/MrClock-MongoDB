@@ -52,7 +52,7 @@ public class MantemPedidoI implements MantemPedido {
 		Pedido umPedido = pedidoRepository.save(pedido);
 		logger.info(">>>>>> cabecalho do pedido salvo no repositorio ");
 		for (ItemDePedido item : pedido.getItens()) {
-			item.setProduto(produtoRepository.getById(item.getProduto().getId()));
+			item.setProduto(produtoRepository.findById(item.getProduto().getId()));
 			item.setQuantidade(item.getQuantidade());
 		}
 		itemRepository.saveAll(pedido.getItens());

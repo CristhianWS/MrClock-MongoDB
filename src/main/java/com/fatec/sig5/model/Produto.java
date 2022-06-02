@@ -4,37 +4,43 @@ package com.fatec.sig5.model;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Random;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
-@Entity
+@Document(collection="Produto")
 public class Produto {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+	@Field
 	private String nome;
+	@Field
 	private String marca;
+	@Field
 	private Double preco;
+	@Field
 	private String descricao;
+	@Field
 	private int quantidade;
+	@Field
 	private String dataCadastro;
 
 	public Produto(String nome, Double preco) {
+		Random rand = new Random();
+		this.id = rand.nextLong();
 		this.nome = nome;
 		this.setPreco(preco);
 	}
 
 	public Produto() {
+		Random rand = new Random();
+		this.id = rand.nextLong();
 
 	}
 
